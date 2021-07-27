@@ -1,0 +1,17 @@
+     $ls_clientes = DB::table('cliente as cli')
+           ->leftjoin('equipamento as equip', 'equip.id', '=', 'cli.equip_id')
+           ->leftjoin('distrito as dt', 'dt.id', '=', 'cli.distri_id')
+           ->leftjoin('provincia as pv', 'pv.id', '=', 'dt.prov_id')
+           ->select("cli.*", "equip.*","dt.*","pv.*" )             
+            ->get();
+
+
+
+                Mail::send('formularios.form_solecitacao', $request->all(), function($masg){
+          $masg->subject('Pedido de Assistencia');
+          $masg->to('anisio.bule@itecgroup.co.mz');
+
+       });
+
+       
+       Session::flash('massage','Email enviado com Sucesso');

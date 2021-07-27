@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="guia" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0c39949d-0529-4b25-a677-5dc023b5051c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="solec_id" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select produto.*,requisicoes.*,users.nameapelido from produto left join requisicoes on requisicoes.id=produto.req_id left JOIN users on users.id=requisicoes.user_id
+WHERE requisicoes.solec_id=$P{solec_id}]]>
+	</queryString>
+	<field name="idprod" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoIten" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="partN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quntidade" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="req_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nivelurgenc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="user_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="solec_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nameapelido" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="67" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="41" width="61" height="20" uuid="d234f396-3413-406a-95c5-891a2e5a9361"/>
+				<text><![CDATA[PartNo.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="30" width="555" height="3" uuid="e4ad0970-5baf-4da9-97e6-8b398e022ecd"/>
+			</line>
+			<rectangle>
+				<reportElement x="118" y="1" width="100" height="20" uuid="67a94c58-851a-4a27-a803-4607f65f02b1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="61" y="41" width="100" height="20" uuid="b0013299-35b3-4774-9c38-2bbf76c522fc"/>
+				<text><![CDATA[Técnico]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="77" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="9fa59ae4-2034-41b3-91ce-20b767a56fbd"/>
+				<textFieldExpression><![CDATA[$F{partN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="100" height="20" uuid="8b6f5831-3bfd-4725-8fec-42092536c0d8"/>
+				<textFieldExpression><![CDATA[$F{nameapelido}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
