@@ -1,0 +1,58 @@
+Vesion 1.o
+-----------------------------------------------------------------------
+esta e a primeira verssao do sistema da itec para gestao de assistencias.
+
+toda a parte funcioanal do sistema esta dividida em quatro partes principais
+- camada das requisicoes
+- camada das rotas
+- camada das visualizacoes
+- camada dos modelos
+
+- todas as alteracoes seram descritas abaixo de acordo com cada alteracao a ser feit o sistema.
+
+
+*********************************************************
+ * CAMADA DAS REQUISICOES
+- FEITOS
+*********************************
+
+*********************************
+- ULTIMA ACTIVIDADE EM PAUSA
+*********************************
+
+*********************************
+
+
+ * CAMADA DAS ROTAS
+- FEITOS
+*********************************
+
+*********************************
+- ULTIMA ACTIVIDADE EM PAUSA
+*********************************
+
+*********************************
+
+ * CAMADA DAS VIEWS
+- FEITOS
+*********************************
+
+*********************************
+- ULTIMA ACTIVIDADE EM PAUSA
+*********************************
+Formulario do usuario ja em processo
+
+*********************************
+
+
+* CAMADA DOS MODELOS
+- FEITOS
+*********************************
+todos modelos ja foram criados
+
+*********************************
+- ULTIMA ACTIVIDADE EM PAUSA
+*********************************
+verificar se os modelos correspodem a o necessario
+*********************************
+

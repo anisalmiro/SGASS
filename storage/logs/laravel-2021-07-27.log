@@ -1,0 +1,411 @@
+[2021-07-27 13:56:09] local.ERROR: Command "make:refresh" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test
+    migrate:fresh
+    migrate:refresh {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:refresh\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test
+    migrate:fresh
+    migrate:refresh at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php:676)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('make:refresh')
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-07-27 13:57:04] local.ERROR: SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint (SQL: alter table `users` add constraint `users_prov_id_foreign` foreign key (`prov_id`) references `provincia` (`id`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint (SQL: alter table `users` add constraint `users_prov_id_foreign` foreign key (`prov_id`) references `provincia` (`id`)) at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `us...', Array, Object(Closure))
+#2 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `us...')
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(264): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\database\\migrations\\2019_05_21_073821_create_users_table.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateUsersTable->up()
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Anisio...', 1, false)
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\FreshCommand.php(55): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\FreshCommand->handle()
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(1009): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\FreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2021-07-27 15:45:23] local.ERROR: Command "make:migrate" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrate\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php:676)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('make:migrate')
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-07-27 16:06:06] local.ERROR: Class sg_logistica\Http\Controllers\LoginController does not exist {"exception":"[object] (ReflectionException(code: -1): Class sg_logistica\\Http\\Controllers\\LoginController does not exist at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:779)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('sg_logistica\\\\Ht...')
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('sg_logistica\\\\Ht...')
+#2 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('sg_logistica\\\\Ht...', Array)
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('sg_logistica\\\\Ht...', Array)
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('sg_logistica\\\\Ht...')
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\server.php(21): require_once('C:\\\\Users\\\\Anisio...')
+#34 {main}
+"} 
+[2021-07-27 16:11:00] local.ERROR: Class 'sg_logistica\Http\Controllers\Controller' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'sg_logistica\\Http\\Controllers\\Controller' not found at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\app\\Http\\Controllers\\LoginController.php:12)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(480): include()
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('C:\\\\Users\\\\Anisio...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('sg_logistica\\\\Ht...')
+#3 [internal function]: spl_autoload_call('sg_logistica\\\\Ht...')
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('sg_logistica\\\\Ht...')
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('sg_logistica\\\\Ht...')
+#6 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('sg_logistica\\\\Ht...', Array)
+#7 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('sg_logistica\\\\Ht...', Array)
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('sg_logistica\\\\Ht...')
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#13 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\server.php(21): require_once('C:\\\\Users\\\\Anisio...')
+#38 {main}
+"} 
+[2021-07-27 16:11:10] local.ERROR: Class 'sg_logistica\Http\Controllers\Controller' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'sg_logistica\\Http\\Controllers\\Controller' not found at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\app\\Http\\Controllers\\LoginController.php:12)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(480): include()
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('C:\\\\Users\\\\Anisio...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('sg_logistica\\\\Ht...')
+#3 [internal function]: spl_autoload_call('sg_logistica\\\\Ht...')
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('sg_logistica\\\\Ht...')
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('sg_logistica\\\\Ht...')
+#6 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('sg_logistica\\\\Ht...', Array)
+#7 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('sg_logistica\\\\Ht...', Array)
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('sg_logistica\\\\Ht...')
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#13 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\server.php(21): require_once('C:\\\\Users\\\\Anisio...')
+#38 {main}
+"} 
+[2021-07-27 16:13:01] local.ERROR: Class 'sg_logistica\Http\Controllers\Controller' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'sg_logistica\\Http\\Controllers\\Controller' not found at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\app\\Http\\Controllers\\Controller.php:10)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(480): include()
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('C:\\\\Users\\\\Anisio...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('sg_logistica\\\\Ht...')
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\app\\Http\\Controllers\\LoginController.php(12): spl_autoload_call('sg_logistica\\\\Ht...')
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(480): include('C:\\\\Users\\\\Anisio...')
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('C:\\\\Users\\\\Anisio...')
+#6 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('sg_logistica\\\\Ht...')
+#7 [internal function]: spl_autoload_call('sg_logistica\\\\Ht...')
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('sg_logistica\\\\Ht...')
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('sg_logistica\\\\Ht...')
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('sg_logistica\\\\Ht...', Array)
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('sg_logistica\\\\Ht...', Array)
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('sg_logistica\\\\Ht...')
+#13 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\server.php(21): require_once('C:\\\\Users\\\\Anisio...')
+#42 {main}
+"} 
+[2021-07-27 16:13:13] local.ERROR: Class 'sg_logistica\Http\Controllers\Controller' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'sg_logistica\\Http\\Controllers\\Controller' not found at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\app\\Http\\Controllers\\Controller.php:10)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(480): include()
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('C:\\\\Users\\\\Anisio...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('sg_logistica\\\\Ht...')
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\app\\Http\\Controllers\\LoginController.php(12): spl_autoload_call('sg_logistica\\\\Ht...')
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(480): include('C:\\\\Users\\\\Anisio...')
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('C:\\\\Users\\\\Anisio...')
+#6 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('sg_logistica\\\\Ht...')
+#7 [internal function]: spl_autoload_call('sg_logistica\\\\Ht...')
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('sg_logistica\\\\Ht...')
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('sg_logistica\\\\Ht...')
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('sg_logistica\\\\Ht...', Array)
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('sg_logistica\\\\Ht...', Array)
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('sg_logistica\\\\Ht...')
+#13 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\server.php(21): require_once('C:\\\\Users\\\\Anisio...')
+#42 {main}
+"} 
+[2021-07-27 16:14:41] local.ERROR: Class sg_logistica\Http\Controllers\Auth\LoginController does not exist {"exception":"[object] (ReflectionException(code: -1): Class sg_logistica\\Http\\Controllers\\Auth\\LoginController does not exist at C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:779)
+[stacktrace]
+#0 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('sg_logistica\\\\Ht...')
+#1 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('sg_logistica\\\\Ht...')
+#2 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('sg_logistica\\\\Ht...', Array)
+#3 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('sg_logistica\\\\Ht...', Array)
+#4 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('sg_logistica\\\\Ht...')
+#5 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#9 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#11 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Anisio\\Dropbox\\My PC (DESKTOP-0NN5O01)\\Documents\\GitHub\\SG_LOGISTICA\\server.php(21): require_once('C:\\\\Users\\\\Anisio...')
+#34 {main}
+"} 
